@@ -1,0 +1,43 @@
+.noob-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-container {
+  display: flex;
+  gap: 40px;
+  transform-origin: 60% 50%;
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.hello, .noob {
+  color: rgb(13, 11, 25);
+  font-size: 128px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.zoom-origin {
+  position: relative;
+  color: rgb(13, 11, 25);
+}
+
+@media (max-width: 768px) {
+  .hello, .noob {
+    font-size: 72px;
+  }
+  .text-container {
+    transform-origin: 63% 50%;
+    gap: 25px;
+  }
+} 
