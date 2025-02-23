@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import './Timeline.css';
 import HI from './hi';
+import img1 from '../assets/img1.webp';
+import img2 from '../assets/img2.jpeg';
+import img3 from '../assets/img3.avif';
+import img4 from '../assets/img4.jpeg';
+import img5 from '../assets/img5.jpg';
+
 
 function TimelineItem({ align, tagline, heading, content, isActive, image }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -99,34 +105,34 @@ function Timeline() {
       tagline: 'Tagline 1',
       heading: 'Heading 1',
       content: 'noob '.repeat(100).trim(),
-      image: 'src/assets/img1.webp', // Add image URL
+      image: img1, // Use the imported image
     },
     {
       tagline: 'Tagline 2',
       heading: 'Heading 2',
       content: 'noob '.repeat(100).trim(),
-      image: 'src/assets/img3.avif', // Add image URL
+      image: img2, // Use the imported image
     },
     {
       tagline: 'Tagline 3',
       heading: 'Why so stressed',
       content: 'noob '.repeat(100).trim(),
-      image: 'src/assets/img2.jpeg', // Add image URL
+      image: img3, // Use the imported image
     },
     {
       tagline: 'tagline',
       heading: 'Its you right??',
       content: 'you '.repeat(100).trim(),
-      image: 'src/assets/img4.jpeg', // Add image URL
+      image: img4, // Use the imported image
     },
     {
       tagline: 'these is you',
       heading: 'something special for you',
       content: 'noob '.repeat(100).trim(),
-      image: 'src/assets/img5.jpg', // Add image URL
+      image: img5, // Use the imported image
     },
-    // Add more items as needed
   ];
+  
 
   return (
     <>
@@ -152,3 +158,5 @@ function Timeline() {
 }
 
 export default Timeline;
+
+
