@@ -91,7 +91,7 @@ function Timeline() {
   }, [showTimeline]);
 
   if (!showTimeline) {
-    return null; // Don't render anything until animation is complete
+    return null; // Don't render anything until animation is ccomplete
   }
 
   const items = [
